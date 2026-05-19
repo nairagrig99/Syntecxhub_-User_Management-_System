@@ -1,9 +1,10 @@
 import express from 'express';
 import mongoose from 'mongoose';
+
+
+import userRoutes from './routes/userRoutes.js';
 import dns from 'dns';
 import dotenv from 'dotenv';
-import userRoutes from './routes/userRoutes.js';
-
 dns.setServers(['8.8.8.8', '8.8.4.4']);
 
 dotenv.config();
